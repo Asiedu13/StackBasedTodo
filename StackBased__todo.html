@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trial Stack Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hamburger">
+      <div class="hamburger__icons">
+        <div class="ham"></div>
+        <div class="ham"></div>
+        <div class="ham"></div>
+      </div>
+    </div>
+
+    <header class="header">
+      <h1 class="header__name">Stack Trial Application</h1>
+    </header>
+
+    <nav class="navigation">
+      <ul class="navigation__con">
+        <li class="navigation__con__item">Home</li>
+        <li class="navigation__con__item">Events</li>
+        <li class="navigation__con__item">Item 3</li>
+      </ul>
+    </nav>
+
+    <div class="displayer"></div>
+    <main class="main">
+      <form action="">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Type a current event here"
+        />
+        <button class="btn">Update Events</button>
+      </form>
+    </main>
+
+    <section class="events mainContainer">
+      <div class="events__header">
+        <h2>Events</h2>
+      </div>
+      <div class="noElem">
+        <p>Sorry you dont have any events</p>
+        <button class="addBtn">Add Event</button>
+      </div>
+      <section class="events__item"></section>
+    </section>
+
+    <!-- Events display -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
