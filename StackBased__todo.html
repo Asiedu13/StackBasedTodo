@@ -6,52 +6,59 @@
     <title>Trial Stack Application</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="hamburger">
-      <div class="hamburger__icons">
-        <div class="ham"></div>
-        <div class="ham"></div>
-        <div class="ham"></div>
+  <body class="font-sans">
+    <header class="w-auto shadow-xl mb-9 h-20 flex sm:flex-row">
+      <div class="flex flex-1 items-center px-4 text-xl">
+        <h1 class="header__name">Stack Trial Application</h1>
       </div>
-    </div>
+      <nav class="flex-1 border-2 flex sm:block bg-white-200">
+        <!-- <div class="w-10 bg-red-200">
+          <div class="w-inherit">
+            <div class="w-7 h-4 bg-blue-300 m-1 "></div>
+            <div class="w-7 h-4 bg-blue-300 m-1"></div>
+            <div class="w-7 h-4 bg-blue-300 m-1"></div>
+          </div>
+        </div> -->
 
-    <header class="header">
-      <h1 class="header__name">Stack Trial Application</h1>
+        <ul
+          class="flex flex-1 w-full p-3 h-full border-2 flex-col sm:flex-row items-center justify-around"
+        >
+          <li class="navigation__con__item">Home</li>
+          <li class="navigation__con__item">Events</li>
+          <li class="navigation__con__item">Item 3</li>
+        </ul>
+      </nav>
     </header>
 
-    <nav class="navigation">
-      <ul class="navigation__con">
-        <li class="navigation__con__item">Home</li>
-        <li class="navigation__con__item">Events</li>
-        <li class="navigation__con__item">Item 3</li>
-      </ul>
-    </nav>
+    <main class="flex flex-col p-5 items-center h-screen">
+      <div class="displayer"></div>
 
-    <div class="displayer"></div>
-    <main class="main">
-      <form action="">
-        <input
+      <section class="flex items-center border-2 h-16 w-full border-2">
+      
+          <input
           type="text"
           id="userInput"
-          placeholder="Type a current event here"
-        />
-        <button class="btn">Update Events</button>
-      </form>
+          placeholder="Finish my homework"
+          class=" h-15 p-3 w-10/12 outline-none"
+          />
+          <button class="h-16 p-3 flex-2 w-1/6 bg-gray-800 text-amber-100 rounded hover:bg-gray-700">Add Event</button>
+      
+      </section>
+
+      <section class="events mainContainer">
+        <div class="events__header">
+          <h2>Events</h2>
+        </div>
+        <div class="noElem">
+          <p>Sorry you dont have any events</p>
+          <button class="addBtn">Add Event</button>
+        </div>
+        <section class="events__item"></section>
+      </section>
+
+      <!-- Events display -->
+
+      <!-- <script src="index.js"></script> -->
     </main>
-
-    <section class="events mainContainer">
-      <div class="events__header">
-        <h2>Events</h2>
-      </div>
-      <div class="noElem">
-        <p>Sorry you dont have any events</p>
-        <button class="addBtn">Add Event</button>
-      </div>
-      <section class="events__item"></section>
-    </section>
-
-    <!-- Events display -->
-
-    <script src="index.js"></script>
   </body>
 </html>
