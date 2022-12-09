@@ -21,39 +21,49 @@
         </div> -->
 
         <ul
-          class="flex flex-1 w-full p-3 h-full border-2 flex-col sm:flex-row items-center justify-around"
+          class="flex flex-1 w-full p-3 h-full  flex-col sm:flex-row items-center justify-around"
         >
           <li class="navigation__con__item">Home</li>
           <li class="navigation__con__item">Events</li>
-          <li class="navigation__con__item">Item 3</li>
+          <li class="navigation__con__item">Feedback</li>
         </ul>
       </nav>
     </header>
 
-    <main class="flex flex-col p-5 items-center h-screen">
+    <main class="flex flex-col p-5 items-center h-screen border-3">
       <div class="displayer"></div>
 
       <section class="flex items-center border-2 h-16 w-full border-2">
-      
-          <input
+        <input
           type="text"
           id="userInput"
           placeholder="Finish my homework"
-          class=" h-15 p-3 w-10/12 outline-none"
-          />
-          <button class="h-16 p-3 flex-2 w-1/6 bg-gray-800 text-amber-100 rounded hover:bg-gray-700">Add Event</button>
-      
+          class="h-15 p-3 w-10/12 outline-none"
+        />
+        <button
+          class="h-16 p-3 flex-2 w-1/6 bg-gray-800 text-amber-100 rounded hover:bg-gray-700"
+        >
+          Add Event
+        </button>
       </section>
 
-      <section class="events mainContainer">
+      <section class="events mainContainer w-full h-full  p-3 pt-10">
         <div class="events__header">
-          <h2>Events</h2>
+          <h2 class="text-orange-600 mb-10">Events</h2>
         </div>
-        <div class="noElem">
-          <p>Sorry you dont have any events</p>
-          <button class="addBtn">Add Event</button>
+
+        <div class="event_display flex justify-around w-full h-full p-5 rounded">
+          <article class="event-list w-1/4 h-5/6 shadow-xl m-1 rounded p-2">
+            <header>Not started</header>
+          </article>
+          <article class="event-list w-1/4 h-5/6 shadow-xl m-1 rounded p-2">
+            <header>In Progress</header>
+
+          </article>
+          <article class="event-list w-1/4 h-5/6 m-1 rounded p-2 shadow-xl">
+            <header>Completed</header>
+          </article>
         </div>
-        <section class="events__item"></section>
       </section>
 
       <!-- Events display -->
